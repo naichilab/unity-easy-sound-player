@@ -1,0 +1,18 @@
+{
+  "name": "com.naichilab.easysoundplayer",
+  "version": "0.9.0",
+  "displayName": "EasySoundPlayer",
+  "unity": "2020.3",
+  "description": "Easy-to-use playing BGM and SE.",
+  "keywords": [
+    "sound",
+    "audio"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "author": {
+    "name": "naichilab",
+    "email": "naichilab@live.jp",
+    "url": "https://github.com/naichilab"
+  }
+}
