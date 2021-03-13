@@ -9,7 +9,9 @@
     "audio"
   ],
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "com.neuecc.unirx": "7.1.0"
+  },
   "author": {
     "name": "naichilab",
     "email": "naichilab@live.jp",

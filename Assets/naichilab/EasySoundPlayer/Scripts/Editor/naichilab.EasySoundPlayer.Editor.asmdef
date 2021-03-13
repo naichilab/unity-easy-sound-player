@@ -1,0 +1,16 @@
+{
+    "name": "naichilab.EasySoundPlayer.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c7401979973704c52adb09241cc86dbb"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
