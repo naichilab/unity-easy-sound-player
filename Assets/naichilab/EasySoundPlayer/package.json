@@ -1,8 +1,8 @@
 {
   "name": "com.naichilab.easysoundplayer",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "displayName": "EasySoundPlayer",
-  "unity": "2020.3",
+  "unity": "2019.4",
   "description": "Easy-to-use playing BGM and SE.",
   "keywords": [
     "sound",
