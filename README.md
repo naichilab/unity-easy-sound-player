@@ -66,10 +66,13 @@ UniRxと同様の手順で、以下のURLを使って導入してください。
 1. 同様の手順で `SePlayer` の方にもオーディオファイルをセットします。
     * <img width="977" alt="スクリーンショット 2021-03-17 1 26 46" src="https://user-images.githubusercontent.com/7110482/111344633-e132a400-86bf-11eb-8d08-779013b57cde.png">
    
-## BGM/SEの再生方法
+## BGMの再生方法
 
-BGMやSEを鳴らしたい時に、以下のコードを呼び出してください。  
-（ご自身のMonoBehaviour等に書いてください）
+* BgmPlayerのインスペクタで `PlayOnAwake` をオンにしておくとシーン読み込み完了時に自動的に再生開始されます。  
+    * 複数のオーディオファイルをセットした場合は１つ目が利用されます。
+    * <img width="462" alt="スクリーンショット 2021-03-17 1 35 05" src="https://user-images.githubusercontent.com/7110482/111345905-0a076900-86c1-11eb-96df-7f57a094e3f3.png">
+   
+スクリプトから手動で鳴らしたい場合や、曲を変更したい場合は以下のコードを書いてください。
 
 ```.cs
 // BGM再生方法A：ファイル番号を指定して再生する
@@ -80,15 +83,19 @@ BgmPlayer.Instance.Play("bgm_maoudamashii_fantasy03");
 BgmPlayer.Instance.Pause();
 // BGMを停止
 BgmPlayer.Instance.Stop();
+```
 
+## SEの再生方法
+
+SEを鳴らしたい時に、以下のコードを書いてください。
+
+```.cs
 // SE再生方法A：ファイル番号を指定して再生する
 SePlayer.Instance.Play(0);
 // SE再生方法B：ファイル名を指定して再生する
 SePlayer.Instance.Play("se_maoudamashii_system28");
 ```
 
-> BGMに関してはインスペクタで `PlayOnAwake` をオンにしておくと上記コードを書かなくてもシーンロード完了時に自動的に再生されます。（複数セットした場合１つ目）
-> <img width="462" alt="スクリーンショット 2021-03-17 1 35 05" src="https://user-images.githubusercontent.com/7110482/111345905-0a076900-86c1-11eb-96df-7f57a094e3f3.png">
 
 ## 音量調整UIの作成
 
@@ -97,9 +104,9 @@ SePlayer.Instance.Play("se_maoudamashii_system28");
 1. ２つのSliderに分かりやすい名前をつけます。
     * <img width="256" alt="スクリーンショット 2021-03-17 1 38 45" src="https://user-images.githubusercontent.com/7110482/111346506-9e71cb80-86c1-11eb-99d1-4b2045f6c93d.png">
     * ここでは `BgmVolumeSlider` と `SeVolumeSlider` としました。
-1. それぞれのレイアウトを調整します。
+1. 位置や見た目は自由に編集してください。
     * Unity標準のuGUIという仕組みなので、わからない場合はググってください。
-    * 適当に位置だけ調整しました。
+    * 例なので適当に位置だけ調整しました。
     * <img width="498" alt="スクリーンショット 2021-03-17 1 41 15" src="https://user-images.githubusercontent.com/7110482/111346768-e5f85780-86c1-11eb-897d-a9f585a4e71d.png">
 1. BgmPlayerのインスペクタを開き、作成したSliderをセットします。
     * <img width="975" alt="スクリーンショット 2021-03-17 1 42 00" src="https://user-images.githubusercontent.com/7110482/111346945-13450580-86c2-11eb-8020-cef8bf4e880f.png">
@@ -107,7 +114,9 @@ SePlayer.Instance.Play("se_maoudamashii_system28");
     * <img width="470" alt="スクリーンショット 2021-03-17 1 42 56" src="https://user-images.githubusercontent.com/7110482/111347080-32439780-86c2-11eb-8b24-cd122691092c.png">
    
 以上で完了です。
-実行すればスライダーを操作することで音量が変更できます。
+
+実行すればスライダーを操作することで音量が変更できます。  
+SEの方は、変更するたびに１つ目のSEが鳴ります。
 
 もしスクリプトから音量を変更したい場合は以下のように書いてください。
 
