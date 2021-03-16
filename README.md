@@ -62,9 +62,6 @@ UniRxと同様の手順で、以下のURLを使って導入してください。
 
 ## 準備
 
-1. プロジェクトビューにて、`Packages/EasySoundPlayer/`に色々なファイルが存在することを確認します。
-    * <img width="317" alt="スクリーンショット 2021-03-17 1 15 06" src="https://user-images.githubusercontent.com/7110482/111342979-4e453a00-86be-11eb-95d8-1b826d38fdcc.png">
-    * もし存在しない場合は導入失敗していますので手順を再確認ください。
 1. プロジェクトビューの `Packages/EasySoundPlayer/Prefabs/` にある２つのプレハブをシーンに配置します。（ヒエラルキービューにドラッグ＆ドロップ）
     * <img width="606" alt="スクリーンショット 2021-03-17 1 17 06" src="https://user-images.githubusercontent.com/7110482/111343221-8d738b00-86be-11eb-96f2-edc4e50e4b70.png">
 1. プロジェクトビューの `Assets/` 以下に、使用するBGMやSEのオーディオファイルを配置します。
