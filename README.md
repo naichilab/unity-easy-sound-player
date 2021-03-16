@@ -28,7 +28,8 @@ Unityで簡単に使えるBGM・SE再生用アセットです。
 
 ### UniRxの導入
 
-一部UniRxを使用しているため先に導入します。
+一部UniRxを使用しているため先に導入します。  
+すでに別の方法（unitypackage等）を利用してUniRxを導入している場合、一度消す必要があります。わからない場合は諦めてください。
 
 1. Window -> Package Manager
     * <img width="331" alt="スクリーンショット 2021-03-17 1 04 29" src="https://user-images.githubusercontent.com/7110482/111341584-ff4ad500-86bc-11eb-9a50-ba852e0b5d89.png">
