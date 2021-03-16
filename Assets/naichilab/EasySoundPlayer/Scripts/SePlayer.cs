@@ -18,7 +18,7 @@ namespace naichilab.EasySoundPlayer.Scripts
             get
             {
                 if (SeList == null) yield break;
-                foreach (var clip in SeList)
+                foreach (var clip in SeList.Where(clip => clip != null))
                 {
                     yield return clip.name;
                 }
