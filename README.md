@@ -102,6 +102,11 @@ SePlayer.Instance.Play(0);
 SePlayer.Instance.Play("se_maoudamashii_system28");
 ```
 
+uGUIのボタンをクリックした時にSEを鳴らすだけであれば、  
+インスペクタのOnClick()を使うことでも同様のことができます。
+
+<img width="747" alt="スクリーンショット 2021-03-17 21 47 47" src="https://user-images.githubusercontent.com/7110482/111469882-902bba00-876a-11eb-9fcc-5a2d6e21d082.png">
+
 
 ## 音量調整UIの作成
 
